@@ -1,5 +1,5 @@
-import 'package:betheheroweb/app/modules/login/repositories/login_repository_interface.dart';
 import 'package:hasura_connect/hasura_connect.dart';
+import './login_repository_interface.dart';
 
 class LoginRepository implements ILoginRepository {
   final HasuraConnect hasuraConnect;

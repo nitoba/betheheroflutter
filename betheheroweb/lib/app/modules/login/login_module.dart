@@ -1,15 +1,15 @@
-import 'package:betheheroweb/app/app_module.dart';
-import 'package:betheheroweb/app/modules/login/pages/logon/login_page_mobile.dart';
-import 'package:betheheroweb/app/modules/login/pages/register/register_page_desktop.dart';
-import 'package:betheheroweb/app/modules/login/pages/register/register_page_mobile.dart';
-import 'package:betheheroweb/app/modules/login/repositories/login_repository.dart';
-import 'package:betheheroweb/app/modules/login/repositories/login_repository_interface.dart';
 import 'package:hasura_connect/hasura_connect.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
+import '../../app_module.dart';
 import 'login_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'pages/logon/login_page_desktop.dart';
+import 'pages/logon/login_page_mobile.dart';
+import 'pages/register/register_page_desktop.dart';
+import 'pages/register/register_page_mobile.dart';
+import 'repositories/login_repository.dart';
+import 'repositories/login_repository_interface.dart';
 
 class LoginModule extends ChildModule {
   @override

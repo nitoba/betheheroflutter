@@ -1,6 +1,6 @@
-import 'package:betheheroweb/app/modules/home/pages/home_profile/home_controller.dart';
-import 'package:betheheroweb/app/modules/home/repositories/home_repository_interface.dart';
-import 'package:betheheroweb/app/shared/constants.dart';
+import 'package:BeTheHeroWeb/app/modules/home/pages/home_profile/home_controller.dart';
+import 'package:BeTheHeroWeb/app/modules/home/repositories/home_repository_interface.dart';
+import 'package:BeTheHeroWeb/app/shared/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:mobx/mobx.dart';

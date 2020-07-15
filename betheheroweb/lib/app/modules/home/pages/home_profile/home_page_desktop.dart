@@ -1,4 +1,4 @@
-import 'package:betheheroweb/app/shared/constants.dart';
+import 'package:BeTheHeroWeb/app/shared/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -44,8 +44,8 @@ class _HomePageDesktopState
                 Modular.to.popAndPushNamed("/");
               },
               registerNewCase: () {
-                Modular.to.pushNamed("/home/newIncident",
-                    arguments: widget.ongID);
+                Modular.to
+                    .pushNamed("/home/newIncident", arguments: widget.ongID);
               },
             ),
           ),

@@ -1,5 +1,5 @@
-import 'package:betheheroweb/app/modules/home/models/incident_model.dart';
-import 'package:betheheroweb/app/modules/home/repositories/home_repository_interface.dart';
+import 'package:BeTheHeroWeb/app/modules/home/models/incident_model.dart';
+import 'package:BeTheHeroWeb/app/modules/home/repositories/home_repository_interface.dart';
 import 'package:mobx/mobx.dart';
 
 part 'home_controller.g.dart';

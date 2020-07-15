@@ -1,16 +1,17 @@
-import 'package:betheheroweb/app/app_module.dart';
-import 'package:betheheroweb/app/modules/home/pages/create_incident/create_incident_desktop_page.dart';
-import 'package:betheheroweb/app/modules/home/pages/create_incident/create_incident_mobile_page.dart';
-import 'package:betheheroweb/app/modules/home/repositories/home_repository.dart';
-import 'package:betheheroweb/app/modules/home/repositories/home_repository_interface.dart';
+import 'package:BeTheHeroWeb/app/modules/home/pages/home_profile/home_controller.dart';
+import 'package:BeTheHeroWeb/app/modules/home/repositories/home_repository_interface.dart';
+
 import 'package:hasura_connect/hasura_connect.dart';
 
+import '../../app_module.dart';
 import 'pages/create_incident/create_incident_controller.dart';
-import 'package:betheheroweb/app/modules/home/pages/home_profile/home_controller.dart';
-import 'package:betheheroweb/app/modules/home/pages/home_profile/home_page_desktop.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'pages/create_incident/create_incident_desktop_page.dart';
+import 'pages/create_incident/create_incident_mobile_page.dart';
+import 'pages/home_profile/home_page_desktop.dart';
 import 'pages/home_profile/home_page_mobile.dart';
+import 'repositories/home_repository.dart';
 
 class HomeModule extends ChildModule {
   @override

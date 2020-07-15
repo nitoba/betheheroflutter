@@ -1,6 +1,6 @@
-import 'package:betheheroweb/app/shared/components/action_button.dart';
-import 'package:betheheroweb/app/shared/components/form_field_widget.dart';
-import 'package:betheheroweb/app/shared/constants.dart';
+import 'package:BeTheHeroWeb/app/shared/components/action_button.dart';
+import 'package:BeTheHeroWeb/app/shared/components/form_field_widget.dart';
+import 'package:BeTheHeroWeb/app/shared/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';

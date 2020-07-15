@@ -1,10 +1,10 @@
-import 'package:betheheroweb/app/modules/home/pages/home_profile/components/header_widget.dart';
-import 'package:betheheroweb/app/modules/home/pages/home_profile/home_controller.dart';
-import 'package:betheheroweb/app/shared/constants.dart';
+import 'package:BeTheHeroWeb/app/shared/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'components/header_widget.dart';
 import 'components/list_incidents.dart';
+import 'home_controller.dart';
 
 class HomePageMobile extends StatefulWidget {
   final String ongID;

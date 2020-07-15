@@ -1,10 +1,10 @@
+import 'package:BeTheHeroWeb/app/app_widget.dart';
+import 'package:BeTheHeroWeb/app/modules/home/home_module.dart';
 import 'package:hasura_connect/hasura_connect.dart';
 
 import 'app_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter/material.dart';
-import 'package:betheheroweb/app/app_widget.dart';
-import 'package:betheheroweb/app/modules/home/home_module.dart';
 
 import 'modules/login/login_module.dart';
 

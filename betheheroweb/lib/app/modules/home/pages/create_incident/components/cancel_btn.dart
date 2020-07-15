@@ -1,4 +1,4 @@
-import 'package:betheheroweb/app/shared/constants.dart';
+import 'package:BeTheHeroWeb/app/shared/constants.dart';
 import 'package:flutter/material.dart';
 
 class CancelButton extends StatelessWidget {

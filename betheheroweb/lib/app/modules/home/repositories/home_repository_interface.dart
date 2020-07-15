@@ -1,4 +1,4 @@
-import 'package:betheheroweb/app/modules/home/models/incident_model.dart';
+import 'package:BeTheHeroWeb/app/modules/home/models/incident_model.dart';
 
 abstract class IHomeRepository {
   Future<List<IncidentStoreModel>> getIncidentsByOng(String ongId);

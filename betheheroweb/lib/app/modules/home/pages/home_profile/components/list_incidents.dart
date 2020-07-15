@@ -1,6 +1,7 @@
-import 'package:betheheroweb/app/modules/home/pages/home_profile/components/incidents_item_widget.dart';
-import 'package:betheheroweb/app/modules/home/pages/home_profile/home_controller.dart';
 import 'package:flutter/material.dart';
+
+import '../home_controller.dart';
+import 'incidents_item_widget.dart';
 
 class ListIncidents extends StatelessWidget {
   final String ongId;
