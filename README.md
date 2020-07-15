@@ -1,4 +1,4 @@
-# Be The Hero Flutter
+﻿# Be The Hero Flutter
 
 Projeto Be The Hero criado pela Rockseat desenvolvido agora utilizando Flutter e Hasura.
 
@@ -14,11 +14,11 @@ Aplicação dividida em projeto frontend utilizando flutter web e frontend mobil
 
 Apk versão arm64
 
-[BeTheHero-arm64.apk](https://drive.google.com/file/d/17BDOARELeh2kMywv8ZU2shC05nkLa-c3/view?usp=sharing)
+[BeTheHero-arm64.apk](https://drive.google.com/file/d/1wdgMmKqE8w9Dm-cp0TJuoE6nRtso_J9M/view?usp=sharing)
 
 Apk versão arm
 
-[BeTheHero-arm.apk](https://drive.google.com/file/d/1bxnlzS92ob-5DFq1wJiY3zLUZFIlGCvW/view?usp=sharing)
+[BeTheHero-arm.apk](https://drive.google.com/file/d/1HfYo0H3ER_S2K5-sklF7rcetfFjGAE_o/view?usp=sharing)
 
 ## Construção
 
