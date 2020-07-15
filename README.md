@@ -117,7 +117,7 @@ mutation createOng($id:String!, $name: String!, $email: String!, $whatsapp: Stri
   "name": "APIPA",
   "email": "contato.apipa@gmail.com",
   "whatapp": "995327491",
-  "city": "Piauí",
+  "city": "Teresina",
   "uf": "PI"
 }
 
@@ -209,7 +209,7 @@ query ListAllIncidents {
           "name": "APIPA",
           "email": "contato.apipa@gmail.com",
           "whatsapp": "995327491",
-          "city": "Piauí",
+          "city": "Teresina",
           "uf": "PI"
         }
       }
