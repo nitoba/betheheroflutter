@@ -73,13 +73,16 @@ class _IncidentsPageState extends State<IncidentsPage> {
                 ],
               );
             } else {
-              return Expanded(
-                child: Center(
-                  child: Lottie.asset(
-                    "assets/animation/loading.json",
-                    height: 100,
-                    width: 100,
-                  ),
+              return Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Lottie.asset(
+                      "assets/animation/loading.json",
+                      height: 100,
+                      width: 100,
+                    ),
+                  ],
                 ),
               );
             }
