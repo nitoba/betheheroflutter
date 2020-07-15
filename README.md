@@ -14,11 +14,11 @@ Aplicação dividida em projeto frontend utilizando flutter web e frontend mobil
 
 Apk versão arm64
 
-[BeTheHero-arm64.apk](https://drive.google.com/file/d/19dhmgbmF9e700_lo51oJG6pWJbF3hHrx/view?usp=sharing)
+[BeTheHero-arm64.apk](https://drive.google.com/file/d/17BDOARELeh2kMywv8ZU2shC05nkLa-c3/view?usp=sharing)
 
 Apk versão arm
 
-[BeTheHero-arm.apk](https://drive.google.com/file/d/1wssunRBVg7aYkQbErUdKNZz0U2atYvBq/view?usp=sharing)
+[BeTheHero-arm.apk](https://drive.google.com/file/d/1bxnlzS92ob-5DFq1wJiY3zLUZFIlGCvW/view?usp=sharing)
 
 ## Construção
 
