@@ -16,9 +16,15 @@ class DetailsPage extends StatefulWidget {
 }
 
 class _DetailsPageState extends State<DetailsPage> {
+  AppController appController;
+  @override
+  void initState() {
+    appController = context.read<AppController>();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    AppController appController = Provider.of<AppController>(context);
     return Scaffold(
       backgroundColor: backgroundColor,
       body: Padding(

@@ -12,10 +12,16 @@ class IncidentsPage extends StatefulWidget {
 }
 
 class _IncidentsPageState extends State<IncidentsPage> {
+  AppController appController;
+  @override
+  void initState() {
+    appController = context.read<AppController>();
+    appController.getAllIncidents();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    AppController appController = Provider.of<AppController>(context);
-    appController.getAllIncidents();
     return Scaffold(
       backgroundColor: backgroundColor,
       body: Padding(

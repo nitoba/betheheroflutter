@@ -8,7 +8,7 @@ class AppController extends ChangeNotifier {
   final IAppRepository repository;
   List<IncidentModel> incidents;
 
-  AppController(this.repository);
+  AppController({this.repository});
 
   Future getAllIncidents() async {
     incidents = await repository.getAllIncidents();
