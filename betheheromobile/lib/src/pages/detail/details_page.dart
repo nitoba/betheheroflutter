@@ -5,7 +5,6 @@ import 'package:betheheromobile/src/shared/components/incident_item.dart';
 import 'package:betheheromobile/src/shared/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
-import 'package:get_it/get_it.dart';
 import 'package:provider/provider.dart';
 
 class DetailsPage extends StatefulWidget {
@@ -21,7 +20,6 @@ class _DetailsPageState extends State<DetailsPage> {
   @override
   void initState() {
     appController = context.read<AppController>();
-    //appController = GetIt.I.get<AppController>();
     super.initState();
   }
 

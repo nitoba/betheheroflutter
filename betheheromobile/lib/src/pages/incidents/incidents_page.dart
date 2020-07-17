@@ -3,11 +3,8 @@ import 'package:betheheromobile/src/shared/components/header_widget.dart';
 import 'package:betheheromobile/src/pages/incidents/components/list_incidents_widget.dart';
 import 'package:betheheromobile/src/shared/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:get_it/get_it.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
-
-import '../../../main.dart';
 
 class IncidentsPage extends StatefulWidget {
   @override
