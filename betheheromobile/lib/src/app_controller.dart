@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_mailer/flutter_mailer.dart';
 import 'package:flutter_open_whatsapp/flutter_open_whatsapp.dart';
 
-class AppController extends ChangeNotifier {
+class AppController with ChangeNotifier {
   final IAppRepository repository;
   List<IncidentModel> incidents;
 
