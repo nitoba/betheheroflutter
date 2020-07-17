@@ -15,80 +15,79 @@ class _IncidentsPageState extends State<IncidentsPage> {
   @override
   Widget build(BuildContext context) {
     AppController appController = Provider.of<AppController>(context);
-
+    appController.getAllIncidents();
     return Scaffold(
       backgroundColor: backgroundColor,
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 14.0, vertical: 16),
-        child: FutureBuilder(
-          future: appController.getAllIncidents(),
-          builder: (context, snapshot) {
-            if (appController.incidents != null) {
-              return Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SizedBox(height: 30),
-                  headerAppBar(
-                    action: Row(
-                      children: [
-                        Text(
-                          "Total de",
-                          style: TextStyle(color: Colors.black),
-                        ),
-                        SizedBox(width: 5),
-                        Text(
-                          "${appController.incidents.length} casos",
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 50),
-                  Text(
-                    "Bem-vindo!",
-                    style: TextStyle(
-                      fontSize: 35,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  SizedBox(height: 20),
-                  Text(
-                    "Escolha um dos casos abaixo\ne salve o dia.",
-                    style: TextStyle(
-                      height: 1.4,
-                      fontSize: 20,
-                      color: subtitleColor,
-                    ),
-                  ),
-                  ListIncidents(
-                    controller: appController,
-                    refresh: () async {
-                      await appController.getAllIncidents();
-                      setState(() {});
-                    },
-                  )
-                ],
-              );
-            } else {
-              return Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+          padding: const EdgeInsets.symmetric(horizontal: 14.0, vertical: 16),
+          child: AnimatedBuilder(
+            animation: appController,
+            builder: (BuildContext context, Widget child) {
+              if (appController.incidents != null) {
+                return Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Lottie.asset(
-                      "assets/animation/loading.json",
-                      height: 100,
-                      width: 100,
+                    SizedBox(height: 30),
+                    headerAppBar(
+                      action: Row(
+                        children: [
+                          Text(
+                            "Total de",
+                            style: TextStyle(color: Colors.black),
+                          ),
+                          SizedBox(width: 5),
+                          Text(
+                            "${appController.incidents.length} casos",
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
+                    SizedBox(height: 50),
+                    Text(
+                      "Bem-vindo!",
+                      style: TextStyle(
+                        fontSize: 35,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Text(
+                      "Escolha um dos casos abaixo\ne salve o dia.",
+                      style: TextStyle(
+                        height: 1.4,
+                        fontSize: 20,
+                        color: subtitleColor,
+                      ),
+                    ),
+                    ListIncidents(
+                      controller: appController,
+                      refresh: () async {
+                        await appController.getAllIncidents();
+                        setState(() {});
+                      },
+                    )
                   ],
-                ),
-              );
-            }
-          },
-        ),
-      ),
+                );
+              } else {
+                return Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Lottie.asset(
+                        "assets/animation/loading.json",
+                        height: 100,
+                        width: 100,
+                      ),
+                    ],
+                  ),
+                );
+              }
+            },
+          )),
     );
   }
 }

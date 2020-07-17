@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        Provider<AppController>(
+        ListenableProvider<AppController>(
           create: (_) => AppController(AppRepository()),
         ),
       ],

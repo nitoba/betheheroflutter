@@ -1,9 +1,10 @@
 import 'package:betheheromobile/src/repositories/app_repository_interface.dart';
 import 'package:betheheromobile/src/shared/models/incident_model.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter_mailer/flutter_mailer.dart';
 import 'package:flutter_open_whatsapp/flutter_open_whatsapp.dart';
 
-class AppController {
+class AppController extends ChangeNotifier {
   final IAppRepository repository;
   List<IncidentModel> incidents;
 
@@ -11,7 +12,7 @@ class AppController {
 
   Future getAllIncidents() async {
     incidents = await repository.getAllIncidents();
-    print(incidents.length);
+    notifyListeners();
   }
 
   Future sendEmailToOng(
