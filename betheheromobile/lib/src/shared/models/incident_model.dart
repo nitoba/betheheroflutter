@@ -1,10 +1,10 @@
-class IncidentModel {
+class IncidentModel extends _Ong {
   int id;
   String title;
   String description;
   double value;
 
-  Ong ong;
+  _Ong ong;
 
   IncidentModel({
     this.id,
@@ -20,19 +20,19 @@ class IncidentModel {
       title: json['title'],
       description: json['description'],
       value: (json['value'] as int).toDouble(),
-      ong: json['ong'] != null ? new Ong.fromJson(json['ong']) : null,
+      ong: json['ong'] != null ? new _Ong.fromJson(json['ong']) : null,
     );
   }
 }
 
-class Ong {
+class _Ong {
   String name;
   String email;
   String whatsapp;
   String city;
   String uf;
 
-  Ong({
+  _Ong({
     this.name,
     this.email,
     this.whatsapp,
@@ -40,8 +40,8 @@ class Ong {
     this.uf,
   });
 
-  factory Ong.fromJson(Map<String, dynamic> json) {
-    return Ong(
+  factory _Ong.fromJson(Map<String, dynamic> json) {
+    return _Ong(
       name: json['name'],
       email: json['email'],
       whatsapp: json['whatsapp'],
