@@ -4,6 +4,7 @@ import 'package:betheheromobile/src/repositories/app_repository.dart';
 import 'package:betheheromobile/src/repositories/app_repository_interface.dart';
 import 'package:betheheromobile/src/shared/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -11,13 +12,14 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
+        Provider<IAppRepository>(create: (_) => AppRepository()),
         ChangeNotifierProvider<AppController>(
-          create: (_) => AppController(repository: AppRepository()),
+          create: (ctx) =>
+              AppController(repository: ctx.read<IAppRepository>()),
         ),
       ],
       child: MaterialApp(
